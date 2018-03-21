@@ -1,4 +1,4 @@
-# student2
+# student1
 
 Modify src/main/resources/application.properties with the DB details.
 
@@ -7,7 +7,13 @@ Usage :: This is for all DB values hardcoded under src/main/resources/applicatio
 
 ### How to COmpile
 ```
-mvn clean package
+mvn clean package -DDBIP=10.142.0.18
+```
+
+### Run the war file 
+
+```
+# java -jar student.war --DBIP=10.142.0.18
 ```
 
 ### Pre-Requisites.
